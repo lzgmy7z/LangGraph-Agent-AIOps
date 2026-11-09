@@ -1,0 +1,40 @@
+2026-04-24 12:45:41,858 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-24 12:45:41,858 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 介绍一下你自己
+2026-04-24 12:46:52,847 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-24 12:46:52,867 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 检测一下最近有没有异常
+2026-04-24 12:46:53,844 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'get_target_service', 'args': {}, 'id': 'call_21525b26a2c24509b233d891', 'type': 'tool_call'}
+2026-04-24 12:46:53,865 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：get_target_service
+2026-04-24 12:46:53,865 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{}
+2026-04-24 12:46:53,873 - agent - INFO - middleware.py:35 - [tool monitor]工具 get_target_service 调用成功
+2026-04-24 12:46:53,874 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-24 12:46:53,874 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | order-service
+2026-04-24 12:46:55,735 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'get_time_range', 'args': {}, 'id': 'call_6620da535b4b4fc784f198cc', 'type': 'tool_call'}
+2026-04-24 12:46:55,735 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：get_time_range
+2026-04-24 12:46:55,735 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{}
+2026-04-24 12:46:55,738 - agent - INFO - middleware.py:35 - [tool monitor]工具 get_time_range 调用成功
+2026-04-24 12:46:55,738 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-24 12:46:55,738 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | 今天
+2026-04-24 12:46:57,322 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_alert_data', 'args': {'service_name': 'order-service', 'time_range': '今天'}, 'id': 'call_1abd3ce15ad649da9aff6083', 'type': 'tool_call'}
+2026-04-24 12:46:57,322 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_alert_data
+2026-04-24 12:46:57,322 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '今天'}
+2026-04-24 12:46:57,353 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-24 12:46:57,353 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-24 12:46:57,353 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'critical': 5, 'warning': 9, 'alerts': ['订单服务 5xx 错误率升高', '订单服务数据库连接池使用率过高', '订单服务平均响应时间超过阈值']}
+2026-04-24 12:46:59,313 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_metric_data', 'args': {'service_name': 'order-service', 'time_range': '今天'}, 'id': 'call_122ba90520c441e2b7131836', 'type': 'tool_call'}
+2026-04-24 12:46:59,313 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_metric_data
+2026-04-24 12:46:59,315 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '今天'}
+2026-04-24 12:46:59,316 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_metric_data 调用成功
+2026-04-24 12:46:59,316 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-24 12:46:59,316 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'cpu_usage': '76%', 'memory_usage': '73%', 'qps': '1180', 'rt': '392ms', 'error_rate': '2.9%', 'pod_restart_count': 8}
+2026-04-24 12:47:02,079 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_log_summary', 'args': {'service_name': 'order-service', 'time_range': '今天'}, 'id': 'call_1dfa7c084ad742d8a8ca5586', 'type': 'tool_call'}
+2026-04-24 12:47:02,079 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_log_summary
+2026-04-24 12:47:02,079 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '今天'}
+2026-04-24 12:47:02,110 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_log_summary 调用成功
+2026-04-24 12:47:02,110 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有11条消息。
+2026-04-24 12:47:02,110 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'top_errors': ['java.sql.SQLTransientConnectionException: Connection is not available', 'Timeout while calling inventory-service', 'RejectedExecutionException'], 'summary': '今日订单服务主要异常集中在数据库连接池紧张、线程池拒绝任务以及调用下游库存服务超时。'}
+2026-04-24 12:47:03,722 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_service_topology', 'args': {'service_name': 'order-service'}, 'id': 'call_3640294351b442fb8c3f9389', 'type': 'tool_call'}
+2026-04-24 12:47:03,722 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_service_topology
+2026-04-24 12:47:03,722 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-24 12:47:03,722 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_service_topology 调用成功
+2026-04-24 12:47:03,722 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有13条消息。
+2026-04-24 12:47:03,722 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'upstream': ['gateway-service'], 'downstream': ['inventory-service', 'payment-service', 'user-service'], 'middleware': ['MySQL', 'Redis', 'Kafka']}

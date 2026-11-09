@@ -1,0 +1,419 @@
+2026-04-23 14:31:37,434 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 14:31:37,434 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是谁
+2026-04-23 14:31:48,991 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 14:31:48,992 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你能干什么
+2026-04-23 14:32:19,338 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 14:32:19,339 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 扫地机器人如何去使用
+2026-04-23 14:32:21,301 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-04-23 14:32:21,301 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人使用方法'}
+2026-04-23 14:32:24,866 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-04-23 14:32:25,860 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 14:32:25,860 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人使用方法包括：首次使用前需充电，安装边刷和尘盒；通过机身按键或手机APP启动清洁；定期清理尘盒、滤网和滚刷；避免在潮湿或有电线杂物的地面上使用；使用完毕后放回充电座自动充电。
+2026-04-23 14:33:45,346 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 14:33:45,346 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 在我这个城市最近的天气，给我一个详细的教程
+2026-04-23 14:35:07,214 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 14:35:07,215 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 在我这个城市最近的天气，给我一个详细的教程
+2026-04-23 14:35:09,964 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-04-23 14:35:09,964 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 14:35:09,965 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-04-23 14:35:09,999 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 14:35:10,000 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 深圳
+2026-04-23 14:35:13,156 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-04-23 14:35:13,156 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '深圳'}
+2026-04-23 14:35:13,157 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-04-23 14:35:13,678 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 14:35:13,679 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 城市深圳天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-04-23 14:35:17,299 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-04-23 14:35:17,299 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人在晴天干燥环境下使用教程和注意事项'}
+2026-04-23 14:35:18,974 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-04-23 14:35:19,348 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 14:35:19,349 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料中未提及扫地机器人在晴天干燥环境下的具体使用教程和注意事项。
+2026-04-23 14:35:22,441 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-04-23 14:35:22,441 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人详细使用教程和最佳实践'}
+2026-04-23 14:35:23,904 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-04-23 14:35:24,256 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-23 14:35:24,257 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料中未提供关于扫地机器人详细使用教程和最佳实践的具体内容。
+2026-04-23 14:35:26,684 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-04-23 14:35:26,684 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人基础使用方法和操作步骤'}
+2026-04-23 14:35:29,643 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-04-23 14:35:30,789 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有11条消息。
+2026-04-23 14:35:30,790 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人基础使用方法和操作步骤包括：首次使用前需充电；安装边刷、尘盒等配件；通过机身按键或手机APP启动清扫；设置虚拟墙或禁区防止进入特定区域；定期清理尘盒、滤网和滚刷以保持性能；使用完毕后放回充电座自动充电。
+2026-04-23 15:51:36,597 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 15:51:36,598 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | CPU 使用率过高一般怎么排查？
+2026-04-23 15:57:51,801 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 15:57:51,801 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 15:57:55,496 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 15:57:55,496 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 15:57:55,506 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_metric_data调用成功
+2026-04-23 15:57:56,786 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 15:57:56,786 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'cpu_usage': '83%', 'memory_usage': '78%', 'qps': '1260', 'rt': '428ms', 'error_rate': '3.8%', 'pod_restart_count': 3}
+2026-04-23 15:58:02,356 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 15:58:02,356 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 15:58:02,357 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_alert_data调用成功
+2026-04-23 15:58:03,392 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 15:58:03,393 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'critical': 2, 'warning': 4, 'alerts': ['订单服务 5xx 错误率升高', '订单服务平均响应时间超过阈值', '订单服务 Pod 重启次数异常']}
+2026-04-23 15:58:08,136 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_log_summary
+2026-04-23 15:58:08,137 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 15:58:08,138 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_log_summary调用成功
+2026-04-23 15:58:10,776 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 15:58:10,776 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'top_errors': ['java.sql.SQLTransientConnectionException: Connection is not available', 'HTTP 500 Internal Server Error', 'Timeout while calling inventory-service'], 'summary': '最近1小时内订单服务出现数据库连接获取超时、下游库存服务调用超时，以及少量 500 错误，请重点排查数据库连接池和下游依赖可用性。'}
+2026-04-23 15:58:15,105 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_service_topology
+2026-04-23 15:58:15,106 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-23 15:58:15,106 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_service_topology调用成功
+2026-04-23 15:58:16,694 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-23 15:58:16,695 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'upstream': ['gateway-service'], 'downstream': ['inventory-service', 'payment-service', 'user-service'], 'middleware': ['MySQL', 'Redis', 'Kafka']}
+2026-04-23 16:13:21,565 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:13:21,565 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | CPU 使用率过高一般怎么排查
+2026-04-23 16:13:23,520 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-04-23 16:13:23,520 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'CPU 使用率过高 排查方法 Linux 运维'}
+2026-04-23 16:13:29,109 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-04-23 16:13:29,122 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 16:13:29,122 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 在 Linux 系统中排查 CPU 使用率过高问题，可使用 top 命令查看整体 CPU 使用情况及占用最高的进程；通过 htop 提供更直观的交互式视图；利用 ps aux --sort=-%cpu 列出按 CPU 占用排序的进程；结合 pidstat -p <PID> 1 3 查看指定进程的详细 CPU 使用统计；若需分析线程级消耗，可使用 top -H -p <PID> 或 ps -T -p <PID>；对于 Java 应用，可通过 jstack <PID> 获取线程堆栈进一步定位热点代码。
+2026-04-23 16:19:53,569 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:19:53,569 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是谁
+2026-04-23 16:23:44,103 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:23:44,103 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | payment-service 今天有什么主要告警
+2026-04-23 16:23:46,651 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_target_service
+2026-04-23 16:23:46,651 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:23:46,652 - agent - INFO - middleware.py:24 - [tool monitor]工具get_target_service调用成功
+2026-04-23 16:23:46,664 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 16:23:46,664 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | user-service
+2026-04-23 16:23:49,212 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_time_range
+2026-04-23 16:23:49,212 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:23:49,213 - agent - INFO - middleware.py:24 - [tool monitor]工具get_time_range调用成功
+2026-04-23 16:23:49,225 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 16:23:49,225 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 最近1小时
+2026-04-23 16:23:52,544 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 16:23:52,545 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'payment-service', 'time_range': '今天'}
+2026-04-23 16:23:52,545 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_alert_data调用成功
+2026-04-23 16:23:52,557 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 16:23:52,558 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'critical': 3, 'warning': 6, 'alerts': ['支付服务交易失败率升高', '支付服务调用第三方接口超时']}
+2026-04-23 16:34:07,734 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:34:07,735 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是谁
+2026-04-23 16:50:00,021 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:50:00,022 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你是谁
+2026-04-23 16:52:36,297 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:52:36,297 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我现在先开展一个运维活动，给我建议
+2026-04-23 16:52:38,096 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_target_service
+2026-04-23 16:52:38,097 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:52:38,097 - agent - INFO - middleware.py:24 - [tool monitor]工具get_target_service调用成功
+2026-04-23 16:52:38,098 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 16:52:38,098 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | order-service
+2026-04-23 16:52:40,422 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_time_range
+2026-04-23 16:52:40,422 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:52:40,422 - agent - INFO - middleware.py:24 - [tool monitor]工具get_time_range调用成功
+2026-04-23 16:52:40,423 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 16:52:40,424 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 最近24小时
+2026-04-23 16:52:42,919 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 16:52:42,919 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-23 16:52:42,922 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_metric_data调用成功
+2026-04-23 16:52:42,924 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 16:52:42,924 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_metric_data' with kwargs {'service_name': 'order-service'} with error:
+ time_range: Field required
+ Please fix the error and try again.
+2026-04-23 16:53:03,000 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:53:03,001 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | payment-service 今天有什么主要告警
+2026-04-23 16:53:04,589 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_target_service
+2026-04-23 16:53:04,589 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:53:04,590 - agent - INFO - middleware.py:24 - [tool monitor]工具get_target_service调用成功
+2026-04-23 16:53:04,591 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 16:53:04,591 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | gateway-service
+2026-04-23 16:53:06,636 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_time_range
+2026-04-23 16:53:06,636 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:53:06,637 - agent - INFO - middleware.py:24 - [tool monitor]工具get_time_range调用成功
+2026-04-23 16:53:06,638 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 16:53:06,638 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 最近1小时
+2026-04-23 16:53:09,403 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 16:53:09,403 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'payment-service', 'time_range': '今天'}
+2026-04-23 16:53:09,403 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_alert_data调用成功
+2026-04-23 16:53:09,405 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 16:53:09,405 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'critical': 3, 'warning': 6, 'alerts': ['支付服务交易失败率升高', '支付服务调用第三方接口超时']}
+2026-04-23 16:56:34,417 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 16:56:34,417 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成今日报告
+2026-04-23 16:56:35,847 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_target_service
+2026-04-23 16:56:35,848 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:56:35,848 - agent - INFO - middleware.py:24 - [tool monitor]工具get_target_service调用成功
+2026-04-23 16:56:35,850 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 16:56:35,850 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | payment-service
+2026-04-23 16:56:36,920 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_time_range
+2026-04-23 16:56:36,921 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:56:36,921 - agent - INFO - middleware.py:24 - [tool monitor]工具get_time_range调用成功
+2026-04-23 16:56:36,924 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 16:56:36,924 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 最近24小时
+2026-04-23 16:56:38,958 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-04-23 16:56:38,958 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 16:56:38,959 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-04-23 16:56:38,960 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 16:56:38,960 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-04-23 16:56:41,990 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 16:56:41,990 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'payment-service'}
+2026-04-23 16:56:41,990 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_report_data调用成功
+2026-04-23 16:56:41,992 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-23 16:56:41,993 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {'service_name': 'payment-service'} with error:
+ time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:04:51,012 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:04:51,012 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成 inventory-service 本月运行报告
+2026-04-23 17:04:53,113 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-04-23 17:04:53,113 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 17:04:53,113 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-04-23 17:04:53,114 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 17:04:53,114 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 17:04:53,115 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_report_data调用成功
+2026-04-23 17:04:53,118 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-04-23 17:04:53,118 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {} with error:
+ service_name: Field required
+time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:04:55,160 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 17:04:55,160 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'inventory-service', 'time_range': '本月'}
+2026-04-23 17:04:55,161 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_report_data调用成功
+2026-04-23 17:04:55,163 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 17:04:55,163 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'service_name': 'inventory-service', 'time_range': '本月', 'alert_summary': {'critical': 7, 'warning': 16, 'alerts': ['库存服务查询延迟升高', '库存服务缓存命中率下降', '库存服务数据库慢查询增多']}, 'metric_summary': {'cpu_usage': '47%', 'memory_usage': '55%', 'qps': '790', 'rt': '276ms', 'error_rate': '1.0%', 'pod_restart_count': 2}, 'log_summary': {'top_errors': ['Slow SQL detected', 'Redis cache miss ratio increased', 'Read timeout from MySQL'], 'summary': '本月库存服务问题整体以数据库慢查询与缓存命中率下降为主。'}, 'topology_summary': {'upstream': ['order-service', 'gateway-service'], 'downstream': [], 'middleware': ['MySQL', 'Redis']}}
+2026-04-23 17:18:43,598 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:18:43,599 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我现在CPU温度过高，你查查怎么回事
+2026-04-23 17:19:04,053 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:19:04,054 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 我现在CPU温度过高，你查查怎么回事
+2026-04-23 17:19:38,181 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:19:38,183 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:19:53,532 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:19:53,532 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:20:04,130 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:20:04,131 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成 inventory-service 本月运行报告
+2026-04-23 17:20:05,967 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-04-23 17:20:05,967 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 17:20:05,967 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 17:20:05,967 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-04-23 17:20:05,968 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-04-23 17:20:05,971 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_report_data调用成功
+2026-04-23 17:20:05,973 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-04-23 17:20:05,973 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {} with error:
+ service_name: Field required
+time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:20:07,568 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 17:20:07,568 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'service_name': 'inventory-service', 'time_range': '本月'}
+2026-04-23 17:20:07,577 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_report_data调用成功
+2026-04-23 17:20:07,578 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 17:20:07,579 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'service_name': 'inventory-service', 'time_range': '本月', 'alert_summary': {'critical': 7, 'warning': 16, 'alerts': ['库存服务查询延迟升高', '库存服务缓存命中率下降', '库存服务数据库慢查询增多']}, 'metric_summary': {'cpu_usage': '47%', 'memory_usage': '55%', 'qps': '790', 'rt': '276ms', 'error_rate': '1.0%', 'pod_restart_count': 2}, 'log_summary': {'top_errors': ['Slow SQL detected', 'Redis cache miss ratio increased', 'Read timeout from MySQL'], 'summary': '本月库存服务问题整体以数据库慢查询与缓存命中率下降为主。'}, 'topology_summary': {'upstream': ['order-service', 'gateway-service'], 'downstream': [], 'middleware': ['MySQL', 'Redis']}}
+2026-04-23 17:20:17,827 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:20:17,827 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:23:27,702 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:23:27,702 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:24:57,172 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:24:57,172 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | payment-service 今天有什么主要告警
+2026-04-23 17:24:58,827 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 17:24:58,827 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'payment-service', 'time_range': '今天'}
+2026-04-23 17:24:58,827 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 17:24:58,828 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 3 条消息。
+2026-04-23 17:24:58,828 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'critical': 3, 'warning': 6, 'alerts': ['支付服务交易失败率升高', '支付服务调用第三方接口超时']}
+2026-04-23 17:25:25,249 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:25:25,249 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | CPU 使用率过高一般怎么排查
+2026-04-23 17:26:06,951 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:26:06,951 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 帮我看看order-service有什么异常情况
+2026-04-23 17:26:08,168 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：get_time_range
+2026-04-23 17:26:08,168 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{}
+2026-04-23 17:26:08,169 - agent - INFO - middleware.py:76 - [tool monitor]工具 get_time_range 调用成功
+2026-04-23 17:26:08,170 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 3 条消息。
+2026-04-23 17:26:08,170 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 本月
+2026-04-23 17:26:09,594 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 17:26:09,594 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '本月'}
+2026-04-23 17:26:09,595 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 17:26:09,596 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 5 条消息。
+2026-04-23 17:26:09,596 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'critical': 18, 'warning': 37, 'alerts': ['订单服务 5xx 错误率升高', '订单服务数据库连接池使用率过高', '订单服务平均响应时间超过阈值', '订单服务 CPU 利用率高']}
+2026-04-23 17:26:11,004 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 17:26:11,004 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '本月'}
+2026-04-23 17:26:11,005 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_metric_data 调用成功
+2026-04-23 17:26:11,006 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 7 条消息。
+2026-04-23 17:26:11,006 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'cpu_usage': '68%', 'memory_usage': '70%', 'qps': '1025', 'rt': '355ms', 'error_rate': '2.1%', 'pod_restart_count': 19}
+2026-04-23 17:26:12,941 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_log_summary
+2026-04-23 17:26:12,941 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '本月'}
+2026-04-23 17:26:12,942 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_log_summary 调用成功
+2026-04-23 17:26:12,943 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 9 条消息。
+2026-04-23 17:26:12,944 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'top_errors': ['Connection pool exhausted', 'Timeout while calling inventory-service', 'HTTP 500 Internal Server Error'], 'summary': '本月订单服务异常主要由高峰期连接池耗尽、下游依赖波动和应用内部 500 错误构成。'}
+2026-04-23 17:26:14,212 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_service_topology
+2026-04-23 17:26:14,213 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-23 17:26:14,213 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_service_topology 调用成功
+2026-04-23 17:26:14,214 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 11 条消息。
+2026-04-23 17:26:14,214 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'upstream': ['gateway-service'], 'downstream': ['inventory-service', 'payment-service', 'user-service'], 'middleware': ['MySQL', 'Redis', 'Kafka']}
+2026-04-23 17:26:37,357 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:26:37,359 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:27:07,524 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:27:07,524 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 生成本月的异常报告
+2026-04-23 17:27:08,450 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：get_target_service
+2026-04-23 17:27:08,450 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{}
+2026-04-23 17:27:08,451 - agent - INFO - middleware.py:76 - [tool monitor]工具 get_target_service 调用成功
+2026-04-23 17:27:08,452 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 3 条消息。
+2026-04-23 17:27:08,452 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | gateway-service
+2026-04-23 17:27:09,304 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：get_time_range
+2026-04-23 17:27:09,304 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{}
+2026-04-23 17:27:09,305 - agent - INFO - middleware.py:76 - [tool monitor]工具 get_time_range 调用成功
+2026-04-23 17:27:09,306 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 5 条消息。
+2026-04-23 17:27:09,307 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 今天
+2026-04-23 17:27:10,491 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fill_context_for_report
+2026-04-23 17:27:10,491 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{}
+2026-04-23 17:27:10,492 - agent - INFO - middleware.py:76 - [tool monitor]工具 fill_context_for_report 调用成功
+2026-04-23 17:27:10,493 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 7 条消息。
+2026-04-23 17:27:10,493 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-04-23 17:27:11,950 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 17:27:11,950 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'gateway-service', 'time_range': '今天'}
+2026-04-23 17:27:11,951 - agent - WARNING - agent_tools.py:392 - [fetch_report_data] 未检索到服务 gateway-service 在 今天 的报告数据
+2026-04-23 17:27:11,951 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_report_data 调用成功
+2026-04-23 17:27:11,952 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 9 条消息。
+2026-04-23 17:27:11,952 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 
+2026-04-23 17:27:13,772 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 17:27:13,772 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'gateway-service', 'time_range': '今天'}
+2026-04-23 17:27:13,773 - agent - WARNING - agent_tools.py:345 - [fetch_metric_data] 未检索到服务 gateway-service 在 今天 的监控指标数据
+2026-04-23 17:27:13,773 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_metric_data 调用成功
+2026-04-23 17:27:13,774 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 11 条消息。
+2026-04-23 17:27:13,774 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 
+2026-04-23 17:27:15,157 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 17:27:15,157 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'gateway-service', 'time_range': '今天'}
+2026-04-23 17:27:15,158 - agent - WARNING - agent_tools.py:335 - [fetch_alert_data] 未检索到服务 gateway-service 在 今天 的告警数据
+2026-04-23 17:27:15,158 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 17:27:15,159 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 13 条消息。
+2026-04-23 17:27:15,159 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 
+2026-04-23 17:27:16,944 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_log_summary
+2026-04-23 17:27:16,944 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'gateway-service', 'time_range': '今天'}
+2026-04-23 17:27:16,944 - agent - WARNING - agent_tools.py:355 - [fetch_log_summary] 未检索到服务 gateway-service 在 今天 的日志摘要数据
+2026-04-23 17:27:16,944 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_log_summary 调用成功
+2026-04-23 17:27:16,945 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 15 条消息。
+2026-04-23 17:27:16,945 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 
+2026-04-23 17:27:18,479 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：fetch_service_topology
+2026-04-23 17:27:18,479 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{'service_name': 'gateway-service'}
+2026-04-23 17:27:18,481 - agent - INFO - middleware.py:76 - [tool monitor]工具 fetch_service_topology 调用成功
+2026-04-23 17:27:18,481 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 17 条消息。
+2026-04-23 17:27:18,482 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | {'upstream': [], 'downstream': ['order-service', 'payment-service', 'inventory-service', 'user-service'], 'middleware': ['Nginx']}
+2026-04-23 17:28:10,194 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:28:10,194 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | inventory-service 最近有什么异常吗
+2026-04-23 17:28:11,122 - agent - INFO - middleware.py:71 - [tool monitor]执行工具：get_time_range
+2026-04-23 17:28:11,122 - agent - INFO - middleware.py:72 - [tool monitor]传入参数：{}
+2026-04-23 17:28:11,123 - agent - INFO - middleware.py:76 - [tool monitor]工具 get_time_range 调用成功
+2026-04-23 17:28:11,124 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 3 条消息。
+2026-04-23 17:28:11,124 - agent - DEBUG - middleware.py:100 - [log_before_model]ToolMessage | 最近24小时
+2026-04-23 17:32:58,012 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:32:58,012 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:33:08,930 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:33:08,930 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:34:36,272 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:34:36,272 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:34:50,416 - agent - INFO - middleware.py:93 - [log_before_model]即将调用模型，带有 1 条消息。
+2026-04-23 17:34:50,416 - agent - DEBUG - middleware.py:100 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:35:26,710 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:35:26,712 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:38:07,782 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:38:07,783 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成 inventory-service 本月运行报告
+2026-04-23 17:38:09,671 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-04-23 17:38:09,672 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {} with error:
+ service_name: Field required
+time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:38:11,410 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 17:38:11,411 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {'service_name': 'inventory-service'} with error:
+ time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:38:22,522 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:38:22,522 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:39:19,698 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:39:19,699 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | payment-service 今天有什么主要告警
+2026-04-23 17:39:21,249 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 17:39:21,250 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'critical': 3, 'warning': 6, 'alerts': ['支付服务交易失败率升高', '支付服务调用第三方接口超时']}
+2026-04-23 17:39:47,467 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:39:47,467 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | cpu目前使用率较高，怎么办
+2026-04-23 17:39:48,386 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 17:39:48,386 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | inventory-service
+2026-04-23 17:39:49,350 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 17:39:49,350 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 本月
+2026-04-23 17:39:50,842 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 17:39:50,843 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'cpu_usage': '47%', 'memory_usage': '55%', 'qps': '790', 'rt': '276ms', 'error_rate': '1.0%', 'pod_restart_count': 2}
+2026-04-23 17:39:53,212 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-23 17:39:53,212 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'critical': 7, 'warning': 16, 'alerts': ['库存服务查询延迟升高', '库存服务缓存命中率下降', '库存服务数据库慢查询增多']}
+2026-04-23 17:39:54,632 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有11条消息。
+2026-04-23 17:39:54,632 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'top_errors': ['Slow SQL detected', 'Redis cache miss ratio increased', 'Read timeout from MySQL'], 'summary': '本月库存服务问题整体以数据库慢查询与缓存命中率下降为主。'}
+2026-04-23 17:39:55,699 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有13条消息。
+2026-04-23 17:39:55,700 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {'upstream': ['order-service', 'gateway-service'], 'downstream': [], 'middleware': ['MySQL', 'Redis']}
+2026-04-23 17:40:33,984 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:40:33,984 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:40:46,121 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:40:46,121 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 生成 inventory-service 本月运行报告
+2026-04-23 17:40:48,089 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有4条消息。
+2026-04-23 17:40:48,089 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {} with error:
+ service_name: Field required
+time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:40:49,725 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 17:40:49,726 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | Error invoking tool 'fetch_report_data' with kwargs {'service_name': 'inventory-service'} with error:
+ time_range: Field required
+ Please fix the error and try again.
+2026-04-23 17:41:04,770 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:41:04,770 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:48:38,916 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:48:38,916 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 17:59:37,705 - agent - INFO - middleware.py:50 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 17:59:37,705 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 18:02:32,487 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:02:32,488 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | CPU 使用率过高一般怎么排查
+2026-04-23 18:02:51,550 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:02:51,551 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 18:03:17,764 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:03:17,764 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 18:06:19,642 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:06:19,642 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 18:06:24,339 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_alert_data', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_53ef0f57493441beb48b56e8', 'type': 'tool_call'}
+2026-04-23 18:06:24,339 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 18:06:24,339 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_metric_data', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_180c63e665e14909ac250a9b', 'type': 'tool_call'}
+2026-04-23 18:06:24,339 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:06:24,339 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 18:06:24,341 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 18:06:24,341 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:06:24,341 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_log_summary', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_74e7677c1b204508bf9e8293', 'type': 'tool_call'}
+2026-04-23 18:06:24,342 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_metric_data 调用成功
+2026-04-23 18:06:24,343 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_log_summary
+2026-04-23 18:06:24,343 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_service_topology', 'args': {'service_name': 'order-service'}, 'id': 'call_3e13fa4a54264238bd8c24a2', 'type': 'tool_call'}
+2026-04-23 18:06:24,343 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:06:24,344 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_service_topology
+2026-04-23 18:06:24,345 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_log_summary 调用成功
+2026-04-23 18:06:24,345 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-23 18:06:24,346 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_service_topology 调用成功
+2026-04-23 18:06:24,349 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 18:06:24,349 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'upstream': ['gateway-service'], 'downstream': ['inventory-service', 'payment-service', 'user-service'], 'middleware': ['MySQL', 'Redis', 'Kafka']}
+2026-04-23 18:06:40,887 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:06:40,888 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 生成 inventory-service 本月运行报告
+2026-04-23 18:06:42,916 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fill_context_for_report', 'args': {}, 'id': 'call_f9a4e6a9f5e140bcb120a45b', 'type': 'tool_call'}
+2026-04-23 18:06:42,916 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fill_context_for_report
+2026-04-23 18:06:42,917 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_report_data', 'args': {'service_name': 'inventory-service', 'time_range': '本月'}, 'id': 'call_3561a9faff954a2fb232a663', 'type': 'tool_call'}
+2026-04-23 18:06:42,917 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{}
+2026-04-23 18:06:42,917 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_report_data
+2026-04-23 18:06:42,918 - agent - INFO - middleware.py:35 - [tool monitor]工具 fill_context_for_report 调用成功
+2026-04-23 18:06:42,918 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'inventory-service', 'time_range': '本月'}
+2026-04-23 18:06:42,918 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_report_data 调用成功
+2026-04-23 18:06:42,920 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有4条消息。
+2026-04-23 18:06:42,921 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'service_name': 'inventory-service', 'time_range': '本月', 'alert_summary': {'critical': 7, 'warning': 16, 'alerts': ['库存服务查询延迟升高', '库存服务缓存命中率下降', '库存服务数据库慢查询增多']}, 'metric_summary': {'cpu_usage': '47%', 'memory_usage': '55%', 'qps': '790', 'rt': '276ms', 'error_rate': '1.0%', 'pod_restart_count': 2}, 'log_summary': {'top_errors': ['Slow SQL detected', 'Redis cache miss ratio increased', 'Read timeout from MySQL'], 'summary': '本月库存服务问题整体以数据库慢查询与缓存命中率下降为主。'}, 'topology_summary': {'upstream': ['order-service', 'gateway-service'], 'downstream': [], 'middleware': ['MySQL', 'Redis']}}
+2026-04-23 18:08:33,011 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:08:33,013 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | 分析一下 order-service 最近1小时的异常情况
+2026-04-23 18:08:37,717 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_alert_data', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_6fa80302b3014b0483b90c91', 'type': 'tool_call'}
+2026-04-23 18:08:37,718 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 18:08:37,718 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:08:37,718 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_metric_data', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_1e1c85c236754d8cb67950fb', 'type': 'tool_call'}
+2026-04-23 18:08:37,719 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 18:08:37,719 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_metric_data
+2026-04-23 18:08:37,719 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_log_summary', 'args': {'service_name': 'order-service', 'time_range': '最近1小时'}, 'id': 'call_4ad4b449fcc743b6b3459d03', 'type': 'tool_call'}
+2026-04-23 18:08:37,720 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:08:37,720 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_log_summary
+2026-04-23 18:08:37,721 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_metric_data 调用成功
+2026-04-23 18:08:37,721 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_service_topology', 'args': {'service_name': 'order-service'}, 'id': 'call_84076754028b4f8f9fcafb69', 'type': 'tool_call'}
+2026-04-23 18:08:37,721 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service', 'time_range': '最近1小时'}
+2026-04-23 18:08:37,721 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_service_topology
+2026-04-23 18:08:37,721 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_log_summary 调用成功
+2026-04-23 18:08:37,722 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'order-service'}
+2026-04-23 18:08:37,723 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_service_topology 调用成功
+2026-04-23 18:08:37,724 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有6条消息。
+2026-04-23 18:08:37,724 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'upstream': ['gateway-service'], 'downstream': ['inventory-service', 'payment-service', 'user-service'], 'middleware': ['MySQL', 'Redis', 'Kafka']}
+2026-04-23 18:09:13,312 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 18:09:13,312 - agent - DEBUG - middleware.py:52 - [log_before_model]HumanMessage | payment-service 今天有什么主要告警
+2026-04-23 18:09:15,192 - agent - INFO - middleware.py:20 - [tool monitor]原始 tool_call: {'name': 'fetch_alert_data', 'args': {'service_name': 'payment-service', 'time_range': '今天'}, 'id': 'call_c8fe94a904174d5cb03415bf', 'type': 'tool_call'}
+2026-04-23 18:09:15,192 - agent - INFO - middleware.py:30 - [tool monitor]执行工具：fetch_alert_data
+2026-04-23 18:09:15,192 - agent - INFO - middleware.py:31 - [tool monitor]传入参数：{'service_name': 'payment-service', 'time_range': '今天'}
+2026-04-23 18:09:15,193 - agent - INFO - middleware.py:35 - [tool monitor]工具 fetch_alert_data 调用成功
+2026-04-23 18:09:15,193 - agent - INFO - middleware.py:51 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 18:09:15,193 - agent - DEBUG - middleware.py:52 - [log_before_model]ToolMessage | {'critical': 3, 'warning': 6, 'alerts': ['支付服务交易失败率升高', '支付服务调用第三方接口超时']}
